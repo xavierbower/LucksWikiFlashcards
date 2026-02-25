@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucks Lab Flashcards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Onboarding screen -->
+    <div id="onboarding" class="screen">
+      <h1>Lucks Lab Flashcards</h1>
+      <p class="subtitle">Lab wiki knowledge, one card at a time</p>
+      <div class="level-picker">
+        <h2>What's your familiarity level?</h2>
+        <button class="level-btn" data-level="new_member">
+          <strong>New Member</strong>
+          <span>I'm new to the lab</span>
+        </button>
+        <button class="level-btn" data-level="experienced">
+          <strong>Experienced</strong>
+          <span>I know the basics</span>
+        </button>
+        <button class="level-btn" data-level="pi">
+          <strong>PI / Senior</strong>
+          <span>Deep familiarity</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main study screen -->
+    <div id="study" class="screen hidden">
+      <header>
+        <h1>Lucks Lab Flashcards</h1>
+        <div class="header-actions">
+          <button id="settings-btn" title="Settings">&#9881;</button>
+        </div>
+      </header>
+
+      <!-- Deck selector -->
+      <div id="deck-selector"></div>
+
+      <!-- Progress bar -->
+      <div id="progress-tracker"></div>
+
+      <!-- Card viewer -->
+      <div id="card-area"></div>
+
+      <!-- Session stats -->
+      <div id="session-stats" class="hidden"></div>
+    </div>
+
+    <!-- Settings panel -->
+    <div id="settings-panel" class="screen hidden"></div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

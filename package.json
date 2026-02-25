@@ -1,0 +1,20 @@
+{
+  "name": "lucks-wiki-flashcards",
+  "version": "1.0.0",
+  "description": "Lab Wiki Flashcard System for the Lucks Lab",
+  "type": "module",
+  "scripts": {
+    "pipeline": "node pipeline/run-all.js",
+    "pipeline:incremental": "node pipeline/run-incremental.js",
+    "serve": "npx serve docs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

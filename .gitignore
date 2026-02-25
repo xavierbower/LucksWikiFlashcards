@@ -1,0 +1,15 @@
+node_modules/
+.env
+data/wiki-repo/
+data/pages.json
+data/takeaways.json
+data/takeaways-insession.json
+data/takeaways-batch-*.json
+data/relationships.json
+data/relationships-insession.json
+data/flashcards.json
+data/flashcards-insession.json
+data/manifests/
+data/batches/
+data/batch-index.json
+data/*.cjs
